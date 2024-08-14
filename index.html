@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="bloco-principal">
+      <div class="bloco-formulario">
+        <form action="" class="formulario-cadastro" id="form">
+          <label class="label">Produto</label>
+          <input
+            required
+            value=""
+            type="text"
+            name="produto"
+            class="input"
+            id="produto"
+            placeholder="Nome do produto"
+          />
+          <label class="label">Valor</label>
+          <input
+            required
+            value=""
+            type="text"
+            name="preco"
+            class="input"
+            id="preco"
+            placeholder="Valor do produto"
+          />
+          <div class="botoes">
+            <button type="submit" class="botao" onclick="cadastrar()">
+              Cadastrar
+            </button>
+            <button class="botao" onclick="cancelar()">Cancelar</button>
+          </div>
+          
+        </form>
+      </div>
+      <div class="bloco-lista">
+        <h3 class="texto">Lista de Produtos</h3>
+        <ul id="lista"></ul>
+        <button class="botao-lista" onclick="limparLista()">
+          Limpar lista
+        </button>
+      </div>
+    </div>
+  </body>
+
+  <script src="java.js"></script>
+</html>
